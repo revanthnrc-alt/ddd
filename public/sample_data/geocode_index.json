@@ -1,0 +1,9 @@
+{
+    "wagah": { "lat": 31.6047, "lon": 74.5725 },
+    "attari": { "lat": 31.5978, "lon": 74.6075 },
+    "fazilka": { "lat": 30.4040, "lon": 73.9690 },
+    "ferozepur": { "lat": 30.9170, "lon": 74.1040 },
+    "amritsar": { "lat": 31.6340, "lon": 74.8723 },
+    "lahore": { "lat": 31.5204, "lon": 74.3587 },
+    "default": { "lat": 31.0, "lon": 74.0 }
+}

@@ -1,0 +1,18 @@
+{
+  "feeds": [
+    { "post_id": "t1", "source": "twitter", "text": "Huge protest planned near Wagah border tomorrow! All patriots assemble at 10 AM. We will not be silenced. #BorderRights", "timestamp": "2025-10-26T10:24:00Z", "user": "Bharat_United", "raw_location": "Wagah, Punjab", "lang": "en" },
+    { "post_id": "h1", "source": "twitter", "text": "कल वाघा सीमा पर भारी विरोध प्रदर्शन! सुबह 10 बजे पहुंचें। #घेराव", "timestamp": "2025-10-26T10:30:00Z", "user": "Kranti_Dal", "raw_location": "Wagah border", "lang": "hi" },
+    { "post_id": "p1", "source": "telegram", "text": "ਸਾਰੇ ਯੂਨਿਟ, ਪੈਕੇਜ ਆ ਰਿਹਾ ਹੈ। ਚੌਕਸ ਰਹੋ।", "timestamp": "2025-10-26T11:05:00Z", "user": "Operator_Alpha", "raw_location": "near Attari", "lang": "pa" },
+    { "post_id": "n1", "source": "news", "text": "Authorities in Amritsar are warning of potential traffic disruptions near the Wagah border due to a planned demonstration.", "timestamp": "2025-10-26T11:15:00Z", "user": "PunjabNewsLive", "raw_location": "Amritsar", "lang": "en" },
+    { "post_id": "t2", "source": "twitter", "text": "The new cafe in Amritsar is amazing! Best lassi in town.", "timestamp": "2025-10-26T10:28:00Z", "user": "FoodieAmritsar", "raw_location": "Amritsar", "lang": "en" },
+    { "post_id": "tg1", "source": "telegram", "text": "The convoy will move at dawn from Ferozepur. Avoid main checkpoint. Use the old smuggling route.", "timestamp": "2025-10-26T11:05:00Z", "user": "SandViper", "raw_location": "Ferozepur", "lang": "en" },
+    { "post_id": "r1", "source": "reddit", "text": "Anyone else seeing increased BSF presence around Fazilka? Something feels off.", "timestamp": "2025-10-26T11:30:00Z", "user": "CuriousIndian", "raw_location": "Fazilka", "lang": "en" },
+    { "post_id": "t3", "source": "twitter", "text": "Just saw a suspicious looking van circle the customs building at Wagah twice. Reported it. #StaySafe", "timestamp": "2025-10-26T11:45:00Z", "user": "AlertCitizen", "raw_location": "Wagah ICP", "lang": "en" },
+    { "post_id": "h2", "source": "telegram", "text": "पैकेज फाजिल्का पहुंच गया है। अगले निर्देश की प्रतीक्षा करें।", "timestamp": "2025-10-26T11:50:00Z", "user": "Handler_9", "raw_location": "Fazilka", "lang": "hi" },
+    { "post_id": "p2", "source": "twitter", "text": "ਫਿਰੋਜ਼ਪੁਰ ਵਿੱਚ ਨੈੱਟਵਰਕ ਬਹੁਤ ਖਰਾਬ ਹੈ। ਕੋਈ ਹੋਰ ਇਹ ਮਹਿਸੂਸ ਕਰ ਰਿਹਾ ਹੈ?", "timestamp": "2025-10-26T12:00:00Z", "user": "PunjabiTech", "raw_location": "Ferozepur", "lang": "pa" },
+    { "post_id": "n2", "source": "news", "text": "BSF conducts successful anti-smuggling operation near Fazilka, seizing contraband worth crores.", "timestamp": "2025-10-26T12:10:00Z", "user": "BorderTimes", "raw_location": "Fazilka", "lang": "en" },
+    { "post_id": "t4", "source": "twitter", "text": "The evening ceremony at Wagah is always so powerful. Jai Hind!", "timestamp": "2025-10-26T12:15:00Z", "user": "ProudIndian", "raw_location": "Wagah border", "lang": "en" },
+    { "post_id": "tg2", "source": "telegram", "text": "All units, comms silence until signal. The distraction team for the Wagah protest is in place.", "timestamp": "2025-10-26T11:55:00Z", "user": "Operator_Alpha", "raw_location": "Wagah border", "lang": "en" },
+    { "post_id": "t5", "source": "twitter", "text": "Cross-border trade via Attari seems to be increasing. Good for local businesses.", "timestamp": "2025-10-26T12:20:00Z", "user": "PunjabTrader", "raw_location": "Attari", "lang": "en" }
+  ]
+}

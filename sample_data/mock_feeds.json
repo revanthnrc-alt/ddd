@@ -1,0 +1,61 @@
+
+{
+  "feeds": [
+    {
+      "post_id": "t1",
+      "source": "twitter",
+      "text": "Huge protest planned near Wagah border tomorrow! All patriots assemble at 10 AM. We will not be silenced. #BorderRights",
+      "timestamp": "2025-10-06T10:24:00Z",
+      "user": "PatriotFront_PK",
+      "raw_location": "Wagah, Punjab"
+    },
+    {
+      "post_id": "t2",
+      "source": "twitter",
+      "text": "The new drone cafe in Lahore is amazing! Best coffee in town.",
+      "timestamp": "2025-10-06T10:28:00Z",
+      "user": "FoodieLahore",
+      "raw_location": "Lahore"
+    },
+    {
+      "post_id": "tg1",
+      "source": "telegram",
+      "text": "Phase 1 is a go. The convoy will move at dawn. Avoid main checkpoint. Use the old smuggling route east of the crossing.",
+      "timestamp": "2025-10-06T11:05:00Z",
+      "user": "Operator_7",
+      "raw_location": "Wagah border crossing"
+    },
+    {
+      "post_id": "n1",
+      "source": "news",
+      "text": "Local authorities are warning of potential traffic disruptions near the Wagah border due to a planned demonstration. Travelers are advised to seek alternate routes.",
+      "timestamp": "2025-10-06T11:15:00Z",
+      "user": "PunjabNews",
+      "raw_location": "Wagah"
+    },
+    {
+      "post_id": "r1",
+      "source": "reddit",
+      "text": "Anyone else seeing increased security presence around the border? Something feels off.",
+      "timestamp": "2025-10-06T11:30:00Z",
+      "user": "CuriousCitizen",
+      "raw_location": "near Wagah"
+    },
+    {
+        "post_id": "t3",
+        "source": "twitter",
+        "text": "Just saw a suspicious looking van circle the customs building twice. Reported it. #StaySafe #Wagah",
+        "timestamp": "2025-10-06T11:45:00Z",
+        "user": "AlertLahori",
+        "raw_location": "Wagah Customs"
+    },
+    {
+        "post_id": "tg2",
+        "source": "telegram",
+        "text": "All units, comms silence until signal. The package is the priority. Distraction team is in place.",
+        "timestamp": "2025-10-06T11:55:00Z",
+        "user": "Operator_7",
+        "raw_location": "Wagah border"
+    }
+  ]
+}

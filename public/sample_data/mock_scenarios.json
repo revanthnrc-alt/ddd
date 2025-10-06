@@ -1,0 +1,37 @@
+{
+  "scenarios": [
+    {
+      "id": "relay_attack_wagah",
+      "name": "Relay Attack (Wagah)",
+      "description": "A drone drops a package in the Wagah border restricted zone, followed by a quick retrieval by an operative on foot.",
+      "event_sequence": [
+        { "entity_id": "DRONE_01", "action": "enter", "timestamp_offset_seconds": 0, "coords": [31.6060, 74.5710], "path": [[31.6060, 74.5710], [31.6042, 74.5728]], "metadata": {} },
+        { "entity_id": "DRONE_01", "action": "move", "timestamp_offset_seconds": 5, "coords": [31.6042, 74.5728], "metadata": {} },
+        { "entity_id": "DRONE_01", "action": "drop_package", "timestamp_offset_seconds": 6, "coords": [31.6042, 74.5728], "metadata": {} },
+        { "entity_id": "DRONE_01", "action": "exit", "timestamp_offset_seconds": 7, "coords": [31.6030, 74.5700], "path": [[31.6042, 74.5728], [31.6030, 74.5700]], "metadata": {} },
+        { "entity_id": "PERSON_01", "action": "enter", "timestamp_offset_seconds": 12, "coords": [31.6035, 74.5745], "path": [[31.6035, 74.5745], [31.6042, 74.5728]], "metadata": {} },
+        { "entity_id": "PERSON_01", "action": "pickup_package", "timestamp_offset_seconds": 16, "coords": [31.6042, 74.5728], "metadata": {} },
+        { "entity_id": "PERSON_01", "action": "exit", "timestamp_offset_seconds": 18, "coords": [31.6050, 74.5755], "path": [[31.6042, 74.5728], [31.6050, 74.5755]], "metadata": {} }
+      ]
+    },
+    {
+      "id": "speed_bypass_fazilka",
+      "name": "Speed Bypass (Fazilka)",
+      "description": "A vehicle transits a checkpoint zone near Fazilka faster than the minimum loitering time, attempting to evade standard alerts.",
+      "event_sequence": [
+        { "entity_id": "VEHICLE_01", "action": "enter", "timestamp_offset_seconds": 0, "coords": [30.4042, 73.9685], "path": [[30.4042, 73.9685], [30.4055, 73.9710]], "metadata": {} },
+        { "entity_id": "VEHICLE_01", "action": "exit", "timestamp_offset_seconds": 10, "coords": [30.4055, 73.9710], "metadata": { "detection_status": "BYPASSED" } }
+      ]
+    },
+    {
+      "id": "gps_spoof_ferozpur",
+      "name": "GPS Spoofing (Ferozepur)",
+      "description": "An entity near Ferozepur appears to jump locations illogically, indicating potential GPS manipulation.",
+      "event_sequence": [
+        { "entity_id": "DRONE_02", "action": "enter", "timestamp_offset_seconds": 0, "coords": [30.9165, 74.1035], "metadata": {} },
+        { "entity_id": "DRONE_02", "action": "move", "timestamp_offset_seconds": 5, "coords": [30.9170, 74.1040], "metadata": {} },
+        { "entity_id": "DRONE_02", "action": "move", "timestamp_offset_seconds": 6, "coords": [31.5204, 74.3587], "metadata": { "detection_status": "DETECTED", "reason": "Impossible travel vector detected" } }
+      ]
+    }
+  ]
+}

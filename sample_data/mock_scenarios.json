@@ -1,0 +1,115 @@
+
+{
+  "scenarios": [
+    {
+      "id": "relay_attack_001",
+      "name": "Relay Attack",
+      "description": "A drone drops a package in a restricted zone, and a person quickly enters to retrieve it, testing temporal-spatial rule violations.",
+      "event_sequence": [
+        {
+          "entity_id": "DRONE_01",
+          "action": "enter",
+          "timestamp_offset_seconds": 0,
+          "coords": [31.6060, 74.5710],
+          "path": [[31.6060, 74.5710], [31.6042, 74.5728]],
+          "metadata": {}
+        },
+        {
+          "entity_id": "DRONE_01",
+          "action": "move",
+          "timestamp_offset_seconds": 5,
+          "coords": [31.6042, 74.5728],
+          "metadata": {}
+        },
+        {
+          "entity_id": "DRONE_01",
+          "action": "drop_package",
+          "timestamp_offset_seconds": 6,
+          "coords": [31.6042, 74.5728],
+          "metadata": {}
+        },
+        {
+          "entity_id": "DRONE_01",
+          "action": "exit",
+          "timestamp_offset_seconds": 7,
+          "coords": [31.6030, 74.5700],
+          "path": [[31.6042, 74.5728], [31.6030, 74.5700]],
+          "metadata": {}
+        },
+        {
+          "entity_id": "PERSON_01",
+          "action": "enter",
+          "timestamp_offset_seconds": 10,
+          "coords": [31.6035, 74.5745],
+          "path": [[31.6035, 74.5745], [31.6042, 74.5728]],
+          "metadata": {}
+        },
+        {
+          "entity_id": "PERSON_01",
+          "action": "pickup_package",
+          "timestamp_offset_seconds": 15,
+          "coords": [31.6042, 74.5728],
+          "metadata": {}
+        },
+        {
+          "entity_id": "PERSON_01",
+          "action": "exit",
+          "timestamp_offset_seconds": 16,
+          "coords": [31.6050, 74.5755],
+           "path": [[31.6042, 74.5728], [31.6050, 74.5755]],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "id": "speed_bypass_002",
+      "name": "Speed Bypass",
+      "description": "An entity moves through the zone faster than the minimum loitering time, attempting to evade detection.",
+      "event_sequence": [
+        {
+          "entity_id": "VEHICLE_01",
+          "action": "enter",
+          "timestamp_offset_seconds": 0,
+          "coords": [31.6030, 74.5735],
+          "path": [[31.6030, 74.5735], [31.6055, 74.5735]],
+          "metadata": {}
+        },
+        {
+          "entity_id": "VEHICLE_01",
+          "action": "exit",
+          "timestamp_offset_seconds": 10,
+          "coords": [31.6055, 74.5735],
+          "metadata": { "detection_status": "BYPASSED" }
+        }
+      ]
+    },
+    {
+      "id": "gps_spoof_003",
+      "name": "GPS Spoofing",
+      "description": "An entity appears to jump locations illogically, indicating potential GPS manipulation.",
+      "event_sequence": [
+        {
+          "entity_id": "DRONE_02",
+          "action": "enter",
+          "timestamp_offset_seconds": 0,
+          "coords": [31.6040, 74.5720],
+          "metadata": {}
+        },
+        {
+          "entity_id": "DRONE_02",
+          "action": "move",
+          "timestamp_offset_seconds": 5,
+          "coords": [31.6042, 74.5722],
+          "metadata": {}
+        },
+        {
+          "entity_id": "DRONE_02",
+          "action": "move",
+          "timestamp_offset_seconds": 6,
+          "coords": [31.8000, 74.9000],
+          "metadata": { "detection_status": "DETECTED", "reason": "Impossible travel vector" }
+        }
+      ]
+    }
+  ]
+}

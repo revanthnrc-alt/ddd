@@ -1,0 +1,5 @@
+{
+  "name": "Unified Command Center",
+  "description": "A unified command center for adversarial red team simulations and social threat intelligence radar. Features mock modes, interactive maps, and AI-driven analysis for a comprehensive security overview.",
+  "requestFramePermissions": []
+}
