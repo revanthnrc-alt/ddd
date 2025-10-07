@@ -1,0 +1,15 @@
+[
+  {
+    "scenario_id": "example1",
+    "description": "Sample relay attack",
+    "zone": {"center": [37.7749, -122.4194], "radius_m": 50},
+    "event_sequence": [
+      {"entity_id":"DRONE_01","entity_type":"drone","action":"enter","timestamp_offset_seconds":0,"coords":[37.7750,-122.4193]},
+      {"entity_id":"DRONE_01","entity_type":"drone","action":"drop","timestamp_offset_seconds":45,"coords":[37.77502,-122.41931],"metadata":{"package_id":"PKG_01"}},
+      {"entity_id":"DRONE_01","entity_type":"drone","action":"leave","timestamp_offset_seconds":46,"coords":[37.7755,-122.4189]},
+      {"entity_id":"PERSON_A","entity_type":"person","action":"enter","timestamp_offset_seconds":180,"coords":[37.77505,-122.41929]},
+      {"entity_id":"PERSON_A","entity_type":"person","action":"pickup","timestamp_offset_seconds":230,"coords":[37.77502,-122.41931],"metadata":{"package_id":"PKG_01"}},
+      {"entity_id":"PERSON_A","entity_type":"person","action":"leave","timestamp_offset_seconds":281,"coords":[37.7756,-122.4188]}
+    ]
+  }
+]

@@ -1,22 +1,45 @@
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Node / build
+node_modules/
+dist/
+dist-ssr/
 
-# Editor directories and files
-.vscode/*
+# Editor files
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+
+# Python env & artifacts
+.venv/
+env/
+venv/
+*.pyc
+__pycache__/
+pip-wheel-metadata/
+
+# Local env files and secret stores
+.env
+.env.*
+
+# Database and distributables
+relay.db
+relay-attack.zip
+
+# Test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Misc
+*.local
 *.suo
 *.ntvs*
 *.njsproj

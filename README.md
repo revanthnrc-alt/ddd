@@ -1,3 +1,62 @@
+# Relay Attack Backend (FastAPI)
+
+This backend provides a simulation engine for a relay attack (Adversarial Red Team), a rule evaluation engine, and AI integration (Gemini) to generate attacks and patches.
+
+Quick start
+
+1. Copy .env.example to .env and fill in GOOGLE_API_KEY and GEMINI_ENDPOINT.
+2. Create a virtualenv and install dependencies:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+3. Initialize the database:
+
+```bash
+python scripts/create_db.py
+```
+
+4. Run the server:
+
+```bash
+uvicorn main:app --reload
+```
+
+API Endpoints
+
+- GET / -> health check
+- POST /simulate/run -> run a simulation (optional scenario)
+- POST /simulate/apply_patch -> apply a blue-team patch (activate rule)
+- GET /simulate/logs -> list past runs
+- POST /ai/red_team -> generate red-team scenario via Gemini
+- POST /ai/blue_team -> request blue-team patch via Gemini
+
+Sample curl:
+
+```bash
+curl -X POST http://127.0.0.1:8000/simulate/run -H "Content-Type: application/json" -d '{}'
+
+curl -X POST http://127.0.0.1:8000/ai/blue_team -H "Content-Type: application/json" -d '{"attack_log":{}, "current_rule":{}}'
+```
+
+Frontend Integration Hints
+
+API_URL = "http://127.0.0.1:8000"
+
+Example runSimulation fetch:
+
+```js
+const res = await fetch(`${API_URL}/simulate/run`, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({}) })
+```
+
+Example generatePatch fetch:
+
+```js
+const res = await fetch(`${API_URL}/ai/blue_team`, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ attack_log: runResult, current_rule: rule }) })
+```
 # Unified Command Center — Indian Border Defense
 
 This is a comprehensive, demo-ready React application that serves as a unified command center for Indian border security operations. It integrates two primary modules: an **Adversarial Red Team Simulator** and a **Social Media & News Threat Radar**. The entire application is designed to run in a fully functional mock mode, requiring no backend setup for demonstration purposes.
