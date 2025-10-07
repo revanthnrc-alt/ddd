@@ -1,3 +1,156 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtualenv folders sometimes checked into repo (many appear in this workspace)
+first/
+only/
+the/
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-wheel-metadata/
+*.egg-info/
+
+# Virtualenv folders sometimes accidentally checked in
+first/
+only/
+the/
+time/
+.venv311/
+
+# ===== Node / Vite / frontend =====
+node_modules/
+dist/
+dist-ssr/
+build/
+out/
+/.turbo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# ===== Editor / OS =====
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# ===== Pytest / coverage =====
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ===== Database / artifacts =====
+*.sqlite
+*.db
+relay.db
+backend/relay.db
+relay-attack.zip
+
+# ===== Environment / secrets =====
+.env
+.env.*
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Build outputs / packages =====
+*.class
+*.war
+*.jar
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Misc =====
+*.pyc
+*.local
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore a literal folder named `#` (some virtualenvs were added to workspace)
+\#/
+\#/**
+
+# Ignore legacy/accidental backend folder
+backen/
+
+# Ignore project archive folders and archive file formats
+archive/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.bak
+
+# ignore virtualenv dist-info/vendor txts that editors sometimes surface as problems
+**/site-packages/**/*.txt
+**/Lib/site-packages/**/*.txt
+**/*-*.dist-info/*.txt
+.coverage
+coverage.xml
+htmlcov/
+
+# Database files
+*.sqlite
+*.db
+relay.db
+
+# backend package DB
+/backend/relay.db
+.venv311/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+dist/
+
+# Build outputs
+*.class
+*.war
+*.jar
+
+# Jupyter
+.ipynb_checkpoints/
 # Logs
 logs/
 *.log
